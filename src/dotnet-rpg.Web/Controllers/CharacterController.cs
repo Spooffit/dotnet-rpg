@@ -18,13 +18,15 @@ public class CharacterController : ControllerBase
     [HttpGet("{id}")]
     public async Task<ActionResult<Character>> GetCharacter(Guid id)
     {
-        var entity = await _characterService.GetCharacterById(id);
-        if (entity is not null)
+        var response = await _characterService.GetCharacterById(id);
+        if (response.Data is not null)
         {
-            return Ok(await _characterService.GetCharacterById(id));
+            return Ok(response);
         }
-
-        throw new ArgumentException(nameof(Character));
+        else
+        {
+            return NotFound(response);
+        }
     }
 
     [HttpGet("GetAll")]
@@ -42,6 +44,14 @@ public class CharacterController : ControllerBase
     [HttpDelete("{id}")]
     public async Task<ActionResult<Character>> DeleteCharacter(Guid id)
     {
-        return Ok(await _characterService.DeleteCharacterById(id));
+        var response = await _characterService.DeleteCharacterById(id);
+        if (response.Data is not null)
+        {
+            return Ok(response);
+        }
+        else
+        {
+            return NotFound(response);
+        }
     }
 }
