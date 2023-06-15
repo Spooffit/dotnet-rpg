@@ -420,6 +420,16 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
+src/dotnet-rpg.Core/bin/Debug
+src/dotnet-rpg.Application/bin/Debug
+src/dotnet-rpg.Infrastructure/bin/Debug
+src/dotnet-rpg.Web/bin/Debug
+
+src/dotnet-rpg.Core/obj/Debug
+src/dotnet-rpg.Application/obj/Debug
+src/dotnet-rpg.Infrastructure/obj/Debug
+src/dotnet-rpg.Web/obj/Debug
+
 src/dotnet-rpg.Web/dotnet-rpgDB.db
 src/dotnet-rpg.Web/dotnet-rpgDB.db-shm
 src/dotnet-rpg.Web/dotnet-rpgDB.db-wal
