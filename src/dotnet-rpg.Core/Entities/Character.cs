@@ -4,7 +4,7 @@ namespace dotnet_rpg.Core.Entities;
 
 public class Character
 {
-    public Guid Id { get; set; } = Guid.NewGuid();
+    public Guid Id { get; set; }
     public string Name { get; set; }
     public int HitPoints { get; set; }
     public int Strength { get; set; }
