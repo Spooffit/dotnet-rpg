@@ -7,7 +7,29 @@
     <projectFile>src/dotnet-rpg.Web/dotnet-rpg.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b694efd7-cc99-40f1-bf9f-fb5353da30a3" name="Changes" comment="Add DbInitializer.cs" />
+    <list default="true" id="b694efd7-cc99-40f1-bf9f-fb5353da30a3" name="Changes" comment="Added default connection string to appsettings.json">
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Core/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/dotnet-rpg.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/dotnet-rpg.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/dotnet-rpg.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/dotnet-rpg.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/dotnet-rpg.Infrastructure.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/dotnet-rpg.Infrastructure.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/dotnet-rpg.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/dotnet-rpg.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/dotnet-rpg.Web.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/dotnet-rpg.Web.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/dotnet-rpg.Web.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/dotnet-rpg.Web.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +154,7 @@
       <updated>1686738033171</updated>
       <workItem from="1686738035048" duration="5989000" />
       <workItem from="1686834126288" duration="109000" />
-      <workItem from="1686834257971" duration="3180000" />
+      <workItem from="1686834257971" duration="3531000" />
     </task>
     <task id="LOCAL-00001" summary="Changed workspace.xml">
       <created>1686832182761</created>
@@ -190,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686837478599</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added default connection string to appsettings.json">
+      <created>1686837588511</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686837588511</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +261,7 @@
     <MESSAGE value="Added CharacterService.cs" />
     <MESSAGE value="Added ICharacterService to CharacterController.cs" />
     <MESSAGE value="Add DbInitializer.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add DbInitializer.cs" />
+    <MESSAGE value="Added default connection string to appsettings.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added default connection string to appsettings.json" />
   </component>
 </project>

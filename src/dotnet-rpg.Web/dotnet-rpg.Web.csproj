@@ -15,6 +15,7 @@
     <ItemGroup>
       <ProjectReference Include="..\dotnet-rpg.Application\dotnet-rpg.Application.csproj" />
       <ProjectReference Include="..\dotnet-rpg.Core\dotnet-rpg.Core.csproj" />
+      <ProjectReference Include="..\dotnet-rpg.Infrastructure\dotnet-rpg.Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
