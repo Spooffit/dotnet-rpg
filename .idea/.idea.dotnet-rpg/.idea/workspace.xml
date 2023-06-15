@@ -7,9 +7,35 @@
     <projectFile>src/dotnet-rpg.Web/dotnet-rpg.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b694efd7-cc99-40f1-bf9f-fb5353da30a3" name="Changes" comment="Fixed CharacterController.cs">
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/Services/CharacterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/Services/CharacterService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/Controllers/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/Controllers/CharacterController.cs" afterDir="false" />
+    <list default="true" id="b694efd7-cc99-40f1-bf9f-fb5353da30a3" name="Changes" comment="Changed DeleteCharacter to DeleteCharacterById">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotnet-rpg.sln" beforeDir="false" afterPath="$PROJECT_DIR$/dotnet-rpg.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/bin/Debug/net7.0/dotnet-rpg.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/bin/Debug/net7.0/dotnet-rpg.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/bin/Debug/net7.0/dotnet-rpg.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/bin/Debug/net7.0/dotnet-rpg.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/ref/dotnet-rpg.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/ref/dotnet-rpg.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/refint/dotnet-rpg.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/refint/dotnet-rpg.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/ref/dotnet-rpg.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/ref/dotnet-rpg.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/refint/dotnet-rpg.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/refint/dotnet-rpg.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Web.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/ref/dotnet-rpg.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/ref/dotnet-rpg.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/refint/dotnet-rpg.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/refint/dotnet-rpg.Web.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +165,7 @@
       <updated>1686738033171</updated>
       <workItem from="1686738035048" duration="5989000" />
       <workItem from="1686834126288" duration="109000" />
-      <workItem from="1686834257971" duration="5124000" />
+      <workItem from="1686834257971" duration="5512000" />
     </task>
     <task id="LOCAL-00001" summary="Changed workspace.xml">
       <created>1686832182761</created>
@@ -246,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686839424965</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Changed DeleteCharacter to DeleteCharacterById">
+      <created>1686839563625</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686839563625</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +328,7 @@
     <MESSAGE value="Updated .gitignore" />
     <MESSAGE value="Updated README.md" />
     <MESSAGE value="Fixed CharacterController.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed CharacterController.cs" />
+    <MESSAGE value="Changed DeleteCharacter to DeleteCharacterById" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed DeleteCharacter to DeleteCharacterById" />
   </component>
 </project>
