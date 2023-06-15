@@ -7,13 +7,16 @@ namespace dotnet_rpg.Infrastructure.Services;
 
 public class CharacterService : ICharacterService
 {
+    private readonly ApplicationDbContext _db;
     private readonly DbSet<Character> _dbSet;
     
     public CharacterService(
-        ApplicationDbContext context)
+        ApplicationDbContext db)
     {
-        _dbSet = context.Set<Character>();
+        _db = db;
+        _dbSet = _db.Set<Character>();
     }
+
     
     public async Task<List<Character>> GetAllCharacters()
     {
@@ -28,6 +31,7 @@ public class CharacterService : ICharacterService
     public async Task<List<Character>> AddCharacter(Character newCharacter)
     {
         await _dbSet.AddAsync(newCharacter);
+        await _db.SaveChangesAsync(CancellationToken.None);
         return await _dbSet.ToListAsync();
     }
 
@@ -36,6 +40,8 @@ public class CharacterService : ICharacterService
         var entity = await _dbSet.FindAsync(id);
         if (entity is not null)
             _dbSet.Remove(entity);
+        
+        await _db.SaveChangesAsync(CancellationToken.None);
         return await _dbSet.ToListAsync();
     }
 }
