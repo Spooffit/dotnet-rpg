@@ -1,0 +1,12 @@
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Core\bin\Debug\net7.0\dotnet-rpg.Core.deps.json
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Core\bin\Debug\net7.0\dotnet-rpg.Core.dll
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Core\bin\Debug\net7.0\dotnet-rpg.Core.pdb
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Core\obj\Debug\net7.0\dotnet-rpg.Core.csproj.AssemblyReference.cache
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Core\obj\Debug\net7.0\dotnet-rpg.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Core\obj\Debug\net7.0\dotnet-rpg.Core.AssemblyInfoInputs.cache
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Core\obj\Debug\net7.0\dotnet-rpg.Core.AssemblyInfo.cs
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Core\obj\Debug\net7.0\dotnet-rpg.Core.csproj.CoreCompileInputs.cache
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Core\obj\Debug\net7.0\dotnet-rpg.Core.dll
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Core\obj\Debug\net7.0\refint\dotnet-rpg.Core.dll
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Core\obj\Debug\net7.0\dotnet-rpg.Core.pdb
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Core\obj\Debug\net7.0\ref\dotnet-rpg.Core.dll

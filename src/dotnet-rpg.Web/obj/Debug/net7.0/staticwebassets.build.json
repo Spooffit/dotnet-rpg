@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "xfdZxs36yx2mcfcQe/YJy51bTvW2cYKpse56Vogm3co=",
+  "Source": "dotnet-rpg.Web",
+  "BasePath": "_content/dotnet-rpg.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
