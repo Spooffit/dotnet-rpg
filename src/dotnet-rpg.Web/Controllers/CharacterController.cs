@@ -18,7 +18,13 @@ public class CharacterController : ControllerBase
     [HttpGet("{id}")]
     public async Task<ActionResult<Character>> GetCharacter(Guid id)
     {
-        return Ok(await _characterService.GetCharacterById(id));
+        var entity = await _characterService.GetCharacterById(id);
+        if (entity is not null)
+        {
+            return Ok(await _characterService.GetCharacterById(id));
+        }
+
+        throw new ArgumentException(nameof(Character));
     }
 
     [HttpGet("GetAll")]
