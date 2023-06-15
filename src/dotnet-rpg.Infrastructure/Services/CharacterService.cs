@@ -1,6 +1,6 @@
-﻿using dotnet_rpg.Application.Interfaces;
-using dotnet_rpg.Application.Services;
+﻿using dotnet_rpg.Application.Services;
 using dotnet_rpg.Core.Entities;
+using dotnet_rpg.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 namespace dotnet_rpg.Infrastructure.Services;
@@ -10,9 +10,9 @@ public class CharacterService : ICharacterService
     private readonly DbSet<Character> _dbSet;
     
     public CharacterService(
-        IApplicationDbContext context)
+        ApplicationDbContext context)
     {
-        _dbSet = context.Character;
+        _dbSet = context.Set<Character>();
     }
     
     public async Task<List<Character>> GetAllCharacters()

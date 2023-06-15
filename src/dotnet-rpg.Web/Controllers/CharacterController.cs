@@ -1,6 +1,5 @@
 ﻿using dotnet_rpg.Application.Services;
 using dotnet_rpg.Core.Entities;
-using dotnet_rpg.Core.Enums;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_rpg.Web.Controllers;
