@@ -4,7 +4,7 @@ namespace dotnet_rpg.Application.Dtos.Character;
 
 public class GetCharacterResponseDto
 {
-    public Guid Id { get; set; } = Guid.NewGuid();
+    public Guid Id { get; set; }
     public string Name { get; set; }
     public int HitPoints { get; set; }
     public int Strength { get; set; }
