@@ -1,10 +1,10 @@
 ﻿using dotnet_rpg.Core.Enums;
 
-namespace dotnet_rpg.Core.Entities;
+namespace dotnet_rpg.Application.Dtos.Character;
 
-public class Character
+public class GetCharacterResponseDto
 {
-    public Guid Id { get; set; }
+    public Guid Id { get; set; } = Guid.NewGuid();
     public string Name { get; set; }
     public int HitPoints { get; set; }
     public int Strength { get; set; }
