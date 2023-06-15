@@ -7,7 +7,9 @@
     <projectFile>src/dotnet-rpg.Web/dotnet-rpg.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b694efd7-cc99-40f1-bf9f-fb5353da30a3" name="Changes" comment="" />
+    <list default="true" id="b694efd7-cc99-40f1-bf9f-fb5353da30a3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg/.idea/vcs.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +129,7 @@
       <updated>1686738033171</updated>
       <workItem from="1686738035048" duration="5989000" />
       <workItem from="1686834126288" duration="109000" />
-      <workItem from="1686834257971" duration="48000" />
+      <workItem from="1686834257971" duration="367000" />
     </task>
     <task id="LOCAL-00001" summary="Changed workspace.xml">
       <created>1686832182761</created>
@@ -176,7 +178,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature" />
+                        <option value="dev" />
                       </list>
                     </value>
                   </entry>
