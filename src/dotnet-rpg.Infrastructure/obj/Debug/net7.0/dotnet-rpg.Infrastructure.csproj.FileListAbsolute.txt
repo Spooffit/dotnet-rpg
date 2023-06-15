@@ -15,3 +15,5 @@ D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\bin\Debug\net7.0\dotn
 D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\bin\Debug\net7.0\dotnet-rpg.Application.pdb
 D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\bin\Debug\net7.0\dotnet-rpg.Core.pdb
 D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\obj\Debug\net7.0\dotnet-rpg.Infrastructure.csproj.CopyComplete
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\bin\Debug\net7.0\dotnet-rpg.Infrastructure.runtimeconfig.json
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\obj\Debug\net7.0\dotnet-rpg.Infrastructure.genruntimeconfig.cache
