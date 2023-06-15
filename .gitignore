@@ -421,3 +421,5 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 src/dotnet-rpg.Web/dotnet-rpgDB.db
+src/dotnet-rpg.Web/dotnet-rpgDB.db-shm
+src/dotnet-rpg.Web/dotnet-rpgDB.db-wal
