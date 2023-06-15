@@ -7,86 +7,8 @@
     <projectFile>src/dotnet-rpg.Web/dotnet-rpg.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b694efd7-cc99-40f1-bf9f-fb5353da30a3" name="Changes" comment="Injected DbInitializer to DI">
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/bin/Debug/net7.0/dotnet-rpg.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/bin/Debug/net7.0/dotnet-rpg.Core.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Application.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Application.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Core.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/Microsoft.Data.Sqlite.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Sqlite.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/SQLitePCLRaw.batteries_v2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/SQLitePCLRaw.core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/SQLitePCLRaw.provider.e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Application.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Application.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Infrastructure.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Infrastructure.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/alpine-arm/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/alpine-arm64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/alpine-x64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/browser-wasm/nativeassets/net7.0/e_sqlite3.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/linux-arm/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/linux-arm64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/linux-armel/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/linux-mips64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/linux-musl-arm/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/linux-musl-x64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/linux-ppc64le/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/linux-s390x/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/linux-x64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/linux-x86/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/osx-arm64/native/libe_sqlite3.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/osx-x64/native/libe_sqlite3.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/win-arm/native/e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/win-arm64/native/e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/win-x64/native/e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/runtimes/win-x86/native/e_sqlite3.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/bin/Debug/net7.0/dotnet-rpg.Application.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/bin/Debug/net7.0/dotnet-rpg.Application.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/bin/Debug/net7.0/dotnet-rpg.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/bin/Debug/net7.0/dotnet-rpg.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/bin/Debug/net7.0/dotnet-rpg.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/bin/Debug/net7.0/dotnet-rpg.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/dotnet-rpg.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/ref/dotnet-rpg.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/ref/dotnet-rpg.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/refint/dotnet-rpg.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/obj/Debug/net7.0/refint/dotnet-rpg.Application.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Infrastructure.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Infrastructure.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/bin/Debug/net7.0/dotnet-rpg.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/dotnet-rpg.Infrastructure.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/ref/dotnet-rpg.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/ref/dotnet-rpg.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/refint/dotnet-rpg.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/obj/Debug/net7.0/refint/dotnet-rpg.Infrastructure.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Web.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Web.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Web.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/bin/Debug/net7.0/dotnet-rpg.Web.runtimeconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/dotnet-rpg.Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/ref/dotnet-rpg.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/ref/dotnet-rpg.Web.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/refint/dotnet-rpg.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/obj/Debug/net7.0/refint/dotnet-rpg.Web.dll" afterDir="false" />
+    <list default="true" id="b694efd7-cc99-40f1-bf9f-fb5353da30a3" name="Changes" comment="Added .gitignore">
+      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/dotnet-rpgDB.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,13 +131,14 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b694efd7-cc99-40f1-bf9f-fb5353da30a3" name="Changes" comment="" />
+      <changelist id="" name="New changelist" comment="" />
       <created>1686738033171</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686738033171</updated>
       <workItem from="1686738035048" duration="5989000" />
       <workItem from="1686834126288" duration="109000" />
-      <workItem from="1686834257971" duration="4182000" />
+      <workItem from="1686834257971" duration="4516000" />
     </task>
     <task id="LOCAL-00001" summary="Changed workspace.xml">
       <created>1686832182761</created>
@@ -294,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686837966525</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added .gitignore">
+      <created>1686838678650</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686838678650</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +269,7 @@
     <MESSAGE value="Added default connection string to appsettings.json" />
     <MESSAGE value="Injected DbContext to DI" />
     <MESSAGE value="Injected DbInitializer to DI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Injected DbInitializer to DI" />
+    <MESSAGE value="Added .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added .gitignore" />
   </component>
 </project>
