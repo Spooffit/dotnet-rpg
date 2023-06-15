@@ -22,7 +22,7 @@ public class CharacterController : ControllerBase
         return Ok(_characterService.GetCharacterById(id));
     }
 
-    [HttpGet]
+    [HttpGet("GetAll")]
     public ActionResult<List<Character>> GetAllCharacters()
     {
         return Ok(_characterService.GetAllCharacters());
