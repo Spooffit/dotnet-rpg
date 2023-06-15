@@ -69,3 +69,9 @@ D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Web\bin\Debug\net7.0\dotnet-rpg.Appl
 D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Web\bin\Debug\net7.0\dotnet-rpg.Infrastructure.dll
 D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Web\bin\Debug\net7.0\dotnet-rpg.Application.pdb
 D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Web\bin\Debug\net7.0\dotnet-rpg.Infrastructure.pdb
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Web\bin\Debug\net7.0\Humanizer.dll
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Web\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Web\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Web\bin\Debug\net7.0\System.CodeDom.dll
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Web\bin\Debug\net7.0\AutoMapper.dll
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Web\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

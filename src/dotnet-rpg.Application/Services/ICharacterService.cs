@@ -1,12 +1,14 @@
-﻿using dotnet_rpg.Core.Entities;
+﻿using dotnet_rpg.Application.Dtos.Character;
+using dotnet_rpg.Core.Entities;
+using dotnet_rpg.Web.Services;
 
 namespace dotnet_rpg.Application.Services;
 
 public interface ICharacterService
 {
-    Task<List<Character>> GetAllCharacters();
-    Task<Character> GetCharacterById(Guid id);
-    Task<List<Character>> AddCharacter(Character newCharacter);
-    Task<List<Character>> DeleteCharacterById(Guid id);
+    Task<ServiceResponse<List<GetCharacterResponseDto>>> GetAllCharacters();
+    Task<ServiceResponse<GetCharacterResponseDto>> GetCharacterById(Guid id);
+    Task<ServiceResponse<List<GetCharacterResponseDto>>> AddCharacter(AddCharacterRequestDto newCharacter);
+    Task<ServiceResponse<List<GetCharacterResponseDto>>> DeleteCharacterById(Guid id);
     
 }

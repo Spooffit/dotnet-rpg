@@ -1,9 +1,12 @@
-﻿namespace dotnet_rpg.Infrastructure.Persistence;
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace dotnet_rpg.Infrastructure.Persistence;
 
 public static class DbInitializer
 {
     public static void Initialize(ApplicationDbContext context)
     {
+        context.Database.Migrate();
         context.Database.EnsureCreated();
     }
 }

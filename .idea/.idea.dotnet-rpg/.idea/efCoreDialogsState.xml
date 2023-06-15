@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EfCoreDialogsState">
+    <option name="keyValueStorage">
+      <map>
+        <entry key="Common:6a8c909f-6ac0-4ae1-8c99-4c19671bb7d0:dbContext" value="dotnet_rpg.Infrastructure.Persistence.ApplicationDbContext" />
+        <entry key="Common:buildConfiguration" value="Debug" />
+        <entry key="Common:noBuild" value="false" />
+        <entry key="Common:outputFolder" value="Persistence\Migrations" />
+        <entry key="Common:targetFramework" value="net7.0" />
+      </map>
+    </option>
+  </component>
+</project>

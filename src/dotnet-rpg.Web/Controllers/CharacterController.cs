@@ -1,5 +1,7 @@
-﻿using dotnet_rpg.Application.Services;
+﻿using dotnet_rpg.Application.Dtos.Character;
+using dotnet_rpg.Application.Services;
 using dotnet_rpg.Core.Entities;
+using dotnet_rpg.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_rpg.Web.Controllers;
@@ -16,26 +18,42 @@ public class CharacterController : ControllerBase
     }
     
     [HttpGet("{id}")]
-    public async Task<ActionResult<Character>> GetCharacter(Guid id)
+    public async Task<ActionResult<ServiceResponse<GetCharacterResponseDto>>> GetCharacter(Guid id)
     {
-        return Ok(await _characterService.GetCharacterById(id));
+        var response = await _characterService.GetCharacterById(id);
+        if (response.Data is not null)
+        {
+            return Ok(response);
+        }
+        else
+        {
+            return NotFound(response);
+        }
     }
 
     [HttpGet("GetAll")]
-    public async Task<ActionResult<List<Character>>> GetAllCharacters()
+    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> GetAllCharacters()
     {
         return Ok(await _characterService.GetAllCharacters());
     }
     
     [HttpPost]
-    public async Task<ActionResult<List<Character>>> AddCharacter(Character newCharacter)
+    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> AddCharacter(AddCharacterRequestDto newCharacter)
     {
         return Ok(await _characterService.AddCharacter(newCharacter));
     }
     
     [HttpDelete("{id}")]
-    public async Task<ActionResult<Character>> DeleteCharacter(Guid id)
+    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> DeleteCharacter(Guid id)
     {
-        return Ok(await _characterService.DeleteCharacterById(id));
+        var response = await _characterService.DeleteCharacterById(id);
+        if (response.Data is not null)
+        {
+            return Ok(response);
+        }
+        else
+        {
+            return NotFound(response);
+        }
     }
 }

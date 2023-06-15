@@ -1,3 +1,4 @@
+using dotnet_rpg.Application.Mappings;
 using dotnet_rpg.Application.Services;
 using dotnet_rpg.Infrastructure.Persistence;
 using dotnet_rpg.Infrastructure.Services;
@@ -11,6 +12,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
