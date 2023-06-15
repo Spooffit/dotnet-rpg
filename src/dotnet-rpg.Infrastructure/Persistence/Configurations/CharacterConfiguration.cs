@@ -10,7 +10,6 @@ public class CharacterConfiguration : IEntityTypeConfiguration<Character>
     {
         builder.HasKey(c => c.Id);
         builder.HasIndex(c => c.Id).IsUnique();
-        builder.Property(c => c.Id).HasDefaultValue(Guid.NewGuid());
         builder.Property(c => c.Name).HasMaxLength(50).IsRequired();
         builder.Property(c => c.Class).IsRequired();
         builder.Property(c => c.Defense).HasDefaultValue(1);
