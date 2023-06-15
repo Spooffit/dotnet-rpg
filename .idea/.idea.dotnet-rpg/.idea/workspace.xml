@@ -7,8 +7,10 @@
     <projectFile>src/dotnet-rpg.Web/dotnet-rpg.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b694efd7-cc99-40f1-bf9f-fb5353da30a3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b694efd7-cc99-40f1-bf9f-fb5353da30a3" name="Changes" comment="Added README.md">
+      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Application/Services/ICharacterService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/Services/CharacterService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dotnet-rpg/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +38,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -129,7 +132,7 @@
       <updated>1686738033171</updated>
       <workItem from="1686738035048" duration="5989000" />
       <workItem from="1686834126288" duration="109000" />
-      <workItem from="1686834257971" duration="367000" />
+      <workItem from="1686834257971" duration="1140000" />
     </task>
     <task id="LOCAL-00001" summary="Changed workspace.xml">
       <created>1686832182761</created>
@@ -159,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686833556954</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added README.md">
+      <created>1686834693315</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686834693315</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,11 +201,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Changed workspace.xml" />
     <MESSAGE value="Added ApplicationDbContext.cs" />
     <MESSAGE value="Fixed SaveChangesAsync in ApplicationDbContext.cs" />
     <MESSAGE value="Added feature branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added feature branch" />
+    <MESSAGE value="Added README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added README.md" />
   </component>
 </project>
