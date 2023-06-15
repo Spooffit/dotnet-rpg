@@ -10,3 +10,6 @@ D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Application\obj\Debug\net7.0\dotnet-
 D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Application\obj\Debug\net7.0\refint\dotnet-rpg.Application.dll
 D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Application\obj\Debug\net7.0\dotnet-rpg.Application.pdb
 D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Application\obj\Debug\net7.0\ref\dotnet-rpg.Application.dll
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Application\bin\Debug\net7.0\dotnet-rpg.Core.dll
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Application\bin\Debug\net7.0\dotnet-rpg.Core.pdb
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Application\obj\Debug\net7.0\dotnet-rpg.Application.csproj.CopyComplete
