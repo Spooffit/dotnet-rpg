@@ -37,6 +37,6 @@ public class CharacterController : ControllerBase
     [HttpDelete("{id}")]
     public ActionResult<Character> DeleteCharacter(Guid id)
     {
-        return Ok(_characterService.DeleteCharacter(id));
+        return Ok(_characterService.DeleteCharacterById(id));
     }
 }

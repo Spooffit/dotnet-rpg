@@ -7,7 +7,10 @@
     <projectFile>src/dotnet-rpg.Web/dotnet-rpg.Web.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b694efd7-cc99-40f1-bf9f-fb5353da30a3" name="Changes" comment="Updated README.md" />
+    <list default="true" id="b694efd7-cc99-40f1-bf9f-fb5353da30a3" name="Changes" comment="Fixed CharacterController.cs">
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/Services/CharacterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Infrastructure/Services/CharacterService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dotnet-rpg.Web/Controllers/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/dotnet-rpg.Web/Controllers/CharacterController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +139,7 @@
       <updated>1686738033171</updated>
       <workItem from="1686738035048" duration="5989000" />
       <workItem from="1686834126288" duration="109000" />
-      <workItem from="1686834257971" duration="4811000" />
+      <workItem from="1686834257971" duration="5124000" />
     </task>
     <task id="LOCAL-00001" summary="Changed workspace.xml">
       <created>1686832182761</created>
@@ -236,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686839138851</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fixed CharacterController.cs">
+      <created>1686839424965</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686839424965</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +294,7 @@
     <MESSAGE value="Added .gitignore" />
     <MESSAGE value="Updated .gitignore" />
     <MESSAGE value="Updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
+    <MESSAGE value="Fixed CharacterController.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed CharacterController.cs" />
   </component>
 </project>

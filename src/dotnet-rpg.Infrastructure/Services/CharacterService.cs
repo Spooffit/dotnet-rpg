@@ -31,7 +31,7 @@ public class CharacterService : ICharacterService
         return await _dbSet.ToListAsync();
     }
 
-    public async Task<List<Character>> DeleteCharacter(Guid id)
+    public async Task<List<Character>> DeleteCharacterById(Guid id)
     {
         var entity = await _dbSet.FindAsync(id);
         if (entity is not null)
