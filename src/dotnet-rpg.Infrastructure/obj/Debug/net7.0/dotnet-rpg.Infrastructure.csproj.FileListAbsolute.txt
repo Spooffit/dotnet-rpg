@@ -10,3 +10,8 @@ D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\obj\Debug\net7.0\dotn
 D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\obj\Debug\net7.0\refint\dotnet-rpg.Infrastructure.dll
 D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\obj\Debug\net7.0\dotnet-rpg.Infrastructure.pdb
 D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\obj\Debug\net7.0\ref\dotnet-rpg.Infrastructure.dll
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\bin\Debug\net7.0\dotnet-rpg.Application.dll
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\bin\Debug\net7.0\dotnet-rpg.Core.dll
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\bin\Debug\net7.0\dotnet-rpg.Application.pdb
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\bin\Debug\net7.0\dotnet-rpg.Core.pdb
+D:\Projects\Rider\dotnet-rpg\src\dotnet-rpg.Infrastructure\obj\Debug\net7.0\dotnet-rpg.Infrastructure.csproj.CopyComplete
