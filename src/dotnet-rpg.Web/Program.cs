@@ -1,4 +1,6 @@
+using dotnet_rpg.Application.Services;
 using dotnet_rpg.Infrastructure.Persistence;
+using dotnet_rpg.Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +31,8 @@ using (var scope = builder.Services.BuildServiceProvider().CreateScope())
         throw;
     }
 }
+
+builder.Services.AddScoped<ICharacterService, CharacterService>();
 
 var app = builder.Build();
 
