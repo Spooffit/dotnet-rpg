@@ -5,7 +5,6 @@ using dotnet_rpg.Core.Entities;
 using dotnet_rpg.Infrastructure.Persistence;
 using dotnet_rpg.Web.Services;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace dotnet_rpg.Infrastructure.Services;
 
