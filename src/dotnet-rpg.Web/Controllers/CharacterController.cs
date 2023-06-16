@@ -56,4 +56,18 @@ public class CharacterController : ControllerBase
             return NotFound(response);
         }
     }
+    
+    [HttpPut]
+    public async Task<ActionResult<ServiceResponse<GetCharacterResponseDto>>> UpdateCharacter(UpdateCharacterRequestDto updateCharacter)
+    {
+        var response = await _characterService.UpdateCharacterById(updateCharacter);
+        if (response.Data is not null)
+        {
+            return Ok(response);
+        }
+        else
+        {
+            return NotFound(response);
+        }
+    }
 }

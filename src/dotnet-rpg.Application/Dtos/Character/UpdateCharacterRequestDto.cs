@@ -2,7 +2,7 @@
 
 namespace dotnet_rpg.Application.Dtos.Character;
 
-public class GetCharacterResponseDto
+public class UpdateCharacterRequestDto
 {
     public Guid Id { get; set; }
     public string Name { get; set; }

@@ -94,4 +94,38 @@ public class CharacterService : ICharacterService
             };
         }
     }
+
+    public async Task<ServiceResponse<GetCharacterResponseDto>> UpdateCharacterById(UpdateCharacterRequestDto updateCharacter)
+    {
+        var serviceResponse = new ServiceResponse<GetCharacterResponseDto>();
+        try
+        {
+            var entity = await _dbSet
+                .AsNoTracking()
+                .FirstOrDefaultAsync(c =>
+                    c.Id == updateCharacter.Id);
+            
+            if (entity is null)
+            {
+                throw new Exception($"Character Id {updateCharacter} not found");
+            }
+            
+            _dbSet.Update(_mapper.Map<Character>(updateCharacter));
+            await _db.SaveChangesAsync(CancellationToken.None);
+            
+            var updatedCharacter = await _dbSet
+                .AsNoTracking()
+                .FirstOrDefaultAsync(c => 
+                    c.Id == updateCharacter.Id);
+
+            serviceResponse.Data = _mapper.Map<GetCharacterResponseDto>(updatedCharacter);
+        }
+        catch (Exception e)
+        {
+            serviceResponse.Success = false;
+            serviceResponse.Message = e.Message;
+        }
+
+        return serviceResponse;
+    }
 }
