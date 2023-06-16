@@ -5,6 +5,7 @@ using dotnet_rpg.Core.Entities;
 using dotnet_rpg.Infrastructure.Persistence;
 using dotnet_rpg.Web.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace dotnet_rpg.Infrastructure.Services;
 
@@ -88,6 +89,30 @@ public class CharacterService : ICharacterService
         else
         {
             return new ServiceResponse<List<GetCharacterResponseDto>>
+            {
+                Success = false,
+                Message = "Entity not found"
+            };
+        }
+    }
+
+    public async Task<ServiceResponse<GetCharacterResponseDto>> UpdateCharacterById(UpdateCharacterRequestDto updateCharacter)
+    {
+        var entity = await _dbSet.AsNoTracking().FirstOrDefaultAsync(c => c.Id == updateCharacter.Id);
+        if (entity is not null)
+        {
+            _dbSet.Update(_mapper.Map<Character>(updateCharacter));
+            await _db.SaveChangesAsync(CancellationToken.None);
+            
+            var updatedCharacter = await _dbSet.AsNoTracking().FirstOrDefaultAsync(c => c.Id == updateCharacter.Id);
+            return new ServiceResponse<GetCharacterResponseDto>
+            {
+                Data = _mapper.Map<GetCharacterResponseDto>(updatedCharacter)
+            };
+        }
+        else
+        {
+            return new ServiceResponse<GetCharacterResponseDto>
             {
                 Success = false,
                 Message = "Entity not found"

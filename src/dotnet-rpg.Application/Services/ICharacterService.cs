@@ -10,5 +10,5 @@ public interface ICharacterService
     Task<ServiceResponse<GetCharacterResponseDto>> GetCharacterById(Guid id);
     Task<ServiceResponse<List<GetCharacterResponseDto>>> AddCharacter(AddCharacterRequestDto newCharacter);
     Task<ServiceResponse<List<GetCharacterResponseDto>>> DeleteCharacterById(Guid id);
-    
+    Task<ServiceResponse<GetCharacterResponseDto>> UpdateCharacterById(UpdateCharacterRequestDto updateCharacter);
 }
