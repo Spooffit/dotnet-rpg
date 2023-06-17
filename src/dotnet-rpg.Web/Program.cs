@@ -1,3 +1,4 @@
+using System.Reflection;
 using dotnet_rpg.Application.Mappings;
 using dotnet_rpg.Application.Services;
 using dotnet_rpg.Infrastructure.Persistence;
@@ -12,9 +13,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
+builder.Services.AddSwaggerGen(cfg =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo{Title = "dotnet-rpg API", Version = "v1"});
+    cfg.SwaggerDoc("v1", new OpenApiInfo{Title = "dotnet-rpg API", Version = "v1"});
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    cfg.IncludeXmlComments(xmlPath);
 });
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
