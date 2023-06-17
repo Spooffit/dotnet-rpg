@@ -22,13 +22,13 @@ public class CharacterController : ControllerBase
     /// </summary>
     /// <remarks>
     /// Sample request:
-    /// GET /api/Character/GetAll
+    /// GET /api/Character
     /// </remarks>
     /// <returns>Returns ServiceResponse</returns>
     /// <response code="200">Success</response>
-    [HttpGet("GetAll")]
+    [HttpGet]
     [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
-    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> GetAllCharacters()
+    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> Get()
     {
         return Ok(await _characterService.GetAllCharacters());
     }
@@ -47,7 +47,7 @@ public class CharacterController : ControllerBase
     [HttpGet("{id}")]
     [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<ServiceResponse<GetCharacterResponseDto>>> GetCharacter(Guid id)
+    public async Task<ActionResult<ServiceResponse<GetCharacterResponseDto>>> Get(Guid id)
     {
         var response = await _characterService.GetCharacterById(id);
         if (response.Data is not null)
@@ -61,7 +61,7 @@ public class CharacterController : ControllerBase
     }
 
     /// <summary>
-    /// Add a new Character
+    /// Creates a new Character
     /// </summary>
     /// <remarks>
     /// Sample request:
@@ -72,40 +72,13 @@ public class CharacterController : ControllerBase
     /// <response code="200">Success</response>
     [HttpPost]
     [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
-    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> AddCharacter(AddCharacterRequestDto newCharacter)
+    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> Create(AddCharacterRequestDto newCharacter)
     {
         return Ok(await _characterService.AddCharacter(newCharacter));
     }
     
     /// <summary>
-    /// Delete a Character
-    /// </summary>
-    /// <remarks>
-    /// Sample request:
-    /// DELETE /api/Character/5C4BFA83-B0BF-43B5-9217-D14042704861
-    /// </remarks>
-    /// <param name="id"></param>
-    /// <returns>Returns ServiceResponse</returns>
-    /// <response code="200">Success</response>
-    /// <response code="404">Not Found</response>
-    [HttpDelete("{id}")]
-    [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> DeleteCharacter(Guid id)
-    {
-        var response = await _characterService.DeleteCharacterById(id);
-        if (response.Data is not null)
-        {
-            return Ok(response);
-        }
-        else
-        {
-            return NotFound(response);
-        }
-    }
-    
-    /// <summary>
-    /// Update a new Character
+    /// Updates a new Character
     /// </summary>
     /// <remarks>
     /// Sample request:
@@ -118,9 +91,36 @@ public class CharacterController : ControllerBase
     [HttpPut]
     [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<ServiceResponse<GetCharacterResponseDto>>> UpdateCharacter(UpdateCharacterRequestDto updateCharacter)
+    public async Task<ActionResult<ServiceResponse<GetCharacterResponseDto>>> Update(UpdateCharacterRequestDto updateCharacter)
     {
         var response = await _characterService.UpdateCharacterById(updateCharacter);
+        if (response.Data is not null)
+        {
+            return Ok(response);
+        }
+        else
+        {
+            return NotFound(response);
+        }
+    }
+    
+    /// <summary>
+    /// Deletes a Character id
+    /// </summary>
+    /// <remarks>
+    /// Sample request:
+    /// DELETE /api/Character/5C4BFA83-B0BF-43B5-9217-D14042704861
+    /// </remarks>
+    /// <param name="id"></param>
+    /// <returns>Returns ServiceResponse</returns>
+    /// <response code="200">Success</response>
+    /// <response code="404">Not Found</response>
+    [HttpDelete("{id}")]
+    [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> Delete(Guid id)
+    {
+        var response = await _characterService.DeleteCharacterById(id);
         if (response.Data is not null)
         {
             return Ok(response);
