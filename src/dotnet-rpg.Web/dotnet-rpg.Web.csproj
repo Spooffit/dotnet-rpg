@@ -9,7 +9,7 @@
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
       <DocumentationFile>bin\Debug\dotnet-rpg.Web.xml</DocumentationFile>
-      <NoWarn>1701;1702;IL2121;1591</NoWarn>
+      <NoWarn>1701;1702;IL2121;1591;IL2121;8619;8618;IL2121</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>

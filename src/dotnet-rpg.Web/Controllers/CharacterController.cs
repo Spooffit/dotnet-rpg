@@ -1,4 +1,5 @@
 ﻿using dotnet_rpg.Application.Dtos.Character;
+using dotnet_rpg.Application.Exceptions;
 using dotnet_rpg.Application.Services;
 using dotnet_rpg.Web.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -30,7 +31,8 @@ public class CharacterController : ControllerBase
     [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
     public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> Get()
     {
-        return Ok(await _characterService.GetAllCharacters());
+        var response = await _characterService.GetAllCharacters();
+        return Ok(response);
     }
     
     /// <summary>
@@ -49,15 +51,18 @@ public class CharacterController : ControllerBase
     [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status404NotFound)]
     public async Task<ActionResult<ServiceResponse<GetCharacterResponseDto>>> Get(Guid id)
     {
-        var response = await _characterService.GetCharacterById(id);
-        if (response.Data is not null)
+        var response = new ServiceResponse<GetCharacterResponseDto>();
+        try
         {
-            return Ok(response);
+            response = await _characterService.GetCharacterById(id);
         }
-        else
+        catch (NotFoundException e)
         {
+            response.Message = e.Message;
+            response.Success = false;
             return NotFound(response);
         }
+        return Ok(response);
     }
 
     /// <summary>
@@ -74,7 +79,8 @@ public class CharacterController : ControllerBase
     [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
     public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> Create(AddCharacterRequestDto newCharacter)
     {
-        return Ok(await _characterService.AddCharacter(newCharacter));
+        var response = await _characterService.AddCharacter(newCharacter);
+        return Ok(response);
     }
     
     /// <summary>
@@ -93,15 +99,18 @@ public class CharacterController : ControllerBase
     [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status404NotFound)]
     public async Task<ActionResult<ServiceResponse<GetCharacterResponseDto>>> Update(UpdateCharacterRequestDto updateCharacter)
     {
-        var response = await _characterService.UpdateCharacterById(updateCharacter);
-        if (response.Data is not null)
+        var response = new ServiceResponse<GetCharacterResponseDto>();
+        try
         {
-            return Ok(response);
+            response = await _characterService.UpdateCharacterById(updateCharacter);
         }
-        else
+        catch (NotFoundException e)
         {
+            response.Message = e.Message;
+            response.Success = false;
             return NotFound(response);
         }
+        return Ok(response);
     }
     
     /// <summary>
@@ -120,14 +129,17 @@ public class CharacterController : ControllerBase
     [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status404NotFound)]
     public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> Delete(Guid id)
     {
-        var response = await _characterService.DeleteCharacterById(id);
-        if (response.Data is not null)
+        var response = new ServiceResponse<List<GetCharacterResponseDto>>();
+        try
         {
-            return Ok(response);
+            response = await _characterService.DeleteCharacterById(id);
         }
-        else
+        catch (NotFoundException e)
         {
+            response.Message = e.Message;
+            response.Success = false;
             return NotFound(response);
         }
+        return Ok(response);
     }
 }
