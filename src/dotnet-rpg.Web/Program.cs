@@ -3,6 +3,7 @@ using dotnet_rpg.Application.Mappings;
 using dotnet_rpg.Application.Services;
 using dotnet_rpg.Infrastructure.Persistence;
 using dotnet_rpg.Infrastructure.Services;
+using dotnet_rpg.Web.Middleware.ExceptionHandler;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -56,6 +57,8 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "dotnet-rpg API v1");
     });
 }
+
+app.UseExceptionHandlerExtension();
 
 app.UseHttpsRedirection();
 

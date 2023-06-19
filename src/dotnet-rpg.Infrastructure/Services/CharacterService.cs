@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using dotnet_rpg.Application.Dtos.Character;
+using dotnet_rpg.Application.Exceptions;
 using dotnet_rpg.Application.Services;
 using dotnet_rpg.Core.Entities;
 using dotnet_rpg.Infrastructure.Persistence;
@@ -36,11 +37,7 @@ public class CharacterService : ICharacterService
         }
         else
         {
-            return new ServiceResponse<GetCharacterResponseDto>
-            {
-                Success = false,
-                Message = "Entity not found"
-            };
+            throw new NotFoundException(nameof(Character), id);
         }
     }
 
@@ -87,44 +84,33 @@ public class CharacterService : ICharacterService
         }
         else
         {
-            return new ServiceResponse<List<GetCharacterResponseDto>>
-            {
-                Success = false,
-                Message = "Entity not found"
-            };
+            throw new NotFoundException(nameof(Character), id);
         }
     }
 
     public async Task<ServiceResponse<GetCharacterResponseDto>> UpdateCharacterById(UpdateCharacterRequestDto updateCharacter)
     {
         var serviceResponse = new ServiceResponse<GetCharacterResponseDto>();
-        try
+        
+        var entity = await _dbSet
+            .AsNoTracking()
+            .FirstOrDefaultAsync(c =>
+                c.Id == updateCharacter.Id);
+            
+        if (entity is null)
         {
-            var entity = await _dbSet
-                .AsNoTracking()
-                .FirstOrDefaultAsync(c =>
-                    c.Id == updateCharacter.Id);
+            throw new NotFoundException(nameof(Character), updateCharacter.Id);
+        }
             
-            if (entity is null)
-            {
-                throw new Exception($"Character Id {updateCharacter} not found");
-            }
+        _dbSet.Update(_mapper.Map<Character>(updateCharacter));
+        await _db.SaveChangesAsync(CancellationToken.None);
             
-            _dbSet.Update(_mapper.Map<Character>(updateCharacter));
-            await _db.SaveChangesAsync(CancellationToken.None);
-            
-            var updatedCharacter = await _dbSet
-                .AsNoTracking()
-                .FirstOrDefaultAsync(c => 
-                    c.Id == updateCharacter.Id);
+        var updatedCharacter = await _dbSet
+            .AsNoTracking()
+            .FirstOrDefaultAsync(c => 
+                c.Id == updateCharacter.Id);
 
-            serviceResponse.Data = _mapper.Map<GetCharacterResponseDto>(updatedCharacter);
-        }
-        catch (Exception e)
-        {
-            serviceResponse.Success = false;
-            serviceResponse.Message = e.Message;
-        }
+        serviceResponse.Data = _mapper.Map<GetCharacterResponseDto>(updatedCharacter);
 
         return serviceResponse;
     }
