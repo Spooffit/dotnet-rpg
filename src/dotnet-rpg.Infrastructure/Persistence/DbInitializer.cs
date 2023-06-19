@@ -6,7 +6,18 @@ public static class DbInitializer
 {
     public static void Initialize(ApplicationDbContext context)
     {
-        context.Database.Migrate();
-        context.Database.EnsureCreated();
+        try
+        {
+            if (context.Database.GetPendingMigrations().Any())
+            {
+                context.Database.Migrate();
+            }
+            context.Database.EnsureCreated();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            throw;
+        };
     }
 }
