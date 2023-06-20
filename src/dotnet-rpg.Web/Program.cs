@@ -1,9 +1,11 @@
-using System.Reflection;
+using dotnet_rpg.Application.Common;
 using dotnet_rpg.Application.Mappings;
 using dotnet_rpg.Application.Services;
 using dotnet_rpg.Infrastructure.Persistence;
 using dotnet_rpg.Infrastructure.Services;
 using dotnet_rpg.Web.Middleware.ExceptionHandler;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -13,12 +15,17 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddMvc();
+
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddValidatorsFromAssemblyContaining<IAssemblyMarker>();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(cfg =>
 {
     cfg.SwaggerDoc("v1", new OpenApiInfo{Title = "dotnet-rpg API", Version = "v1"});
-    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlFile = $"{typeof(Program).Assembly.GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     cfg.IncludeXmlComments(xmlPath);
 });

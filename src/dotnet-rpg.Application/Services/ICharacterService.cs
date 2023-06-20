@@ -1,5 +1,4 @@
 ﻿using dotnet_rpg.Application.Dtos.Character;
-using dotnet_rpg.Core.Entities;
 using dotnet_rpg.Web.Services;
 
 namespace dotnet_rpg.Application.Services;

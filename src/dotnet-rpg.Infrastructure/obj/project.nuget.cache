@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "onk8CF6QGEWAM9aK594Nh4YJrJLwRElnfuM7h/WenYx9FrDByxnn7xaZqtUiiBbyeck6U9jchJJ0aDRgQGPGNQ==",
+  "dgSpecHash": "/bH3YnWGjoYIYA+JhQrc8oZvvtZyBsRsUnVOInvXC/rbFGb3ENjaMQRQJIqGaAW7CahCq8pljS2nPXQd1IGaeA==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Rider\\dotnet-rpg\\src\\dotnet-rpg.Infrastructure\\dotnet-rpg.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\super\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\super\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\super\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\super\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\super\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\super\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.7\\microsoft.data.sqlite.core.7.0.7.nupkg.sha512",

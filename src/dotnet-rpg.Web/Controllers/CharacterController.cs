@@ -1,12 +1,13 @@
 ﻿using dotnet_rpg.Application.Dtos.Character;
-using dotnet_rpg.Application.Exceptions;
 using dotnet_rpg.Application.Services;
+using dotnet_rpg.Web.Filters;
 using dotnet_rpg.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace dotnet_rpg.Web.Controllers;
 
 [ApiController]
+[ApiExceptionFilter]
 [Route("api/[controller]")]
 [Produces("application/json")]
 public class CharacterController : ControllerBase
@@ -27,11 +28,15 @@ public class CharacterController : ControllerBase
     /// </remarks>
     /// <returns>Returns ServiceResponse</returns>
     /// <response code="200">Success</response>
+    /// <response code="400">Bad Request</response>
+    /// <response code="500">Internal Server Error</response>
     [HttpGet]
     [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
-    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> Get()
+    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> 
+        Get()
     {
-        var response = await _characterService.GetAllCharacters();
+        var response = new ServiceResponse<List<GetCharacterResponseDto>>();
+        response = await _characterService.GetAllCharacters();
         return Ok(response);
     }
     
@@ -46,22 +51,17 @@ public class CharacterController : ControllerBase
     /// <returns>Returns ServiceResponse</returns>
     /// <response code="200">Success</response>
     /// <response code="404">Not Found</response>
+    /// <response code="400">Bad Request</response>
+    /// <response code="500">Internal Server Error</response>
     [HttpGet("{id}")]
     [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<ServiceResponse<GetCharacterResponseDto>>> Get(Guid id)
+    public async Task<ActionResult<ServiceResponse<GetCharacterResponseDto>>> 
+        Get(Guid id)
     {
         var response = new ServiceResponse<GetCharacterResponseDto>();
-        try
-        {
-            response = await _characterService.GetCharacterById(id);
-        }
-        catch (NotFoundException e)
-        {
-            response.Message = e.Message;
-            response.Success = false;
-            return NotFound(response);
-        }
+        response = await _characterService.GetCharacterById(id);
+        
         return Ok(response);
     }
 
@@ -75,11 +75,16 @@ public class CharacterController : ControllerBase
     /// <param name="newCharacter"></param>
     /// <returns>Returns ServiceResponse</returns>
     /// <response code="200">Success</response>
+    /// <response code="400">Bad Request</response>
+    /// <response code="500">Internal Server Error</response>
     [HttpPost]
     [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
-    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> Create(AddCharacterRequestDto newCharacter)
+    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> 
+        Create([FromBody]AddCharacterRequestDto newCharacter)
     {
-        var response = await _characterService.AddCharacter(newCharacter);
+        var response = new ServiceResponse<List<GetCharacterResponseDto>>();
+        response = await _characterService.AddCharacter(newCharacter);
+        
         return Ok(response);
     }
     
@@ -94,22 +99,17 @@ public class CharacterController : ControllerBase
     /// <returns>Returns ServiceResponse</returns>
     /// <response code="200">Success</response>
     /// <response code="404">Not Found</response>
+    /// <response code="400">Bad Request</response>
+    /// <response code="500">Internal Server Error</response>
     [HttpPut]
     [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<ServiceResponse<GetCharacterResponseDto>>> Update(UpdateCharacterRequestDto updateCharacter)
+    public async Task<ActionResult<ServiceResponse<GetCharacterResponseDto>>> 
+        Update([FromBody]UpdateCharacterRequestDto updateCharacter)
     {
         var response = new ServiceResponse<GetCharacterResponseDto>();
-        try
-        {
-            response = await _characterService.UpdateCharacterById(updateCharacter);
-        }
-        catch (NotFoundException e)
-        {
-            response.Message = e.Message;
-            response.Success = false;
-            return NotFound(response);
-        }
+        response = await _characterService.UpdateCharacterById(updateCharacter);
+        
         return Ok(response);
     }
     
@@ -124,22 +124,17 @@ public class CharacterController : ControllerBase
     /// <returns>Returns ServiceResponse</returns>
     /// <response code="200">Success</response>
     /// <response code="404">Not Found</response>
+    /// <response code="400">Bad Request</response>
+    /// <response code="500">Internal Server Error</response>
     [HttpDelete("{id}")]
     [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> Delete(Guid id)
+    public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> 
+        Delete(Guid id)
     {
         var response = new ServiceResponse<List<GetCharacterResponseDto>>();
-        try
-        {
-            response = await _characterService.DeleteCharacterById(id);
-        }
-        catch (NotFoundException e)
-        {
-            response.Message = e.Message;
-            response.Success = false;
-            return NotFound(response);
-        }
+        response = await _characterService.DeleteCharacterById(id);
+        
         return Ok(response);
     }
 }
