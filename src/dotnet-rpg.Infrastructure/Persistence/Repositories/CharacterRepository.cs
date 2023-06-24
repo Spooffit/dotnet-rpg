@@ -26,29 +26,24 @@ public class CharacterRepository : ICharacterRepository
         return await _dbSet.FindAsync(id);
     }
 
-    public async Task<List<Character?>> AddCharacterAsync(Character? entity, CancellationToken cancellationToken = default)
+    public async Task AddCharacterAsync(Character? entity)
     {
         await _dbSet.AddAsync(entity);
-        await _db.SaveChangesAsync(cancellationToken);
-
-        return await _dbSet.ToListAsync();
     }
 
-    public async Task<List<Character?>> DeleteCharacterByIdAsync(Guid id, CancellationToken cancellationToken = default)
+    public async Task DeleteCharacterByIdAsync(Guid id)
     {
         var entity = await _dbSet.FindAsync(id);
         _dbSet.Remove(entity);
-
-        await _db.SaveChangesAsync(cancellationToken);
-        
-        return await _dbSet.ToListAsync();
     }
 
-    public async Task<Character?> UpdateCharacterAsync(Character? entity, CancellationToken cancellationToken = default)
+    public void UpdateCharacter(Character? entity)
     {
         _dbSet.Update(entity);
-        await _db.SaveChangesAsync(cancellationToken);
+    }
 
-        return await _dbSet.FindAsync(entity);
+    public async Task SaveChangesAsync(CancellationToken cancellationToken = default)
+    {
+        await _db.SaveChangesAsync(cancellationToken);
     }
 }

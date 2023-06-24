@@ -6,7 +6,8 @@ public interface ICharacterRepository
 {
     Task<List<Character?>> GetAllCharactersAsync();
     Task<Character?> GetCharacterByIdAsync(Guid id);
-    Task<List<Character?>> AddCharacterAsync(Character? entity, CancellationToken cancellationToken = default);
-    Task<List<Character?>> DeleteCharacterByIdAsync(Guid id, CancellationToken cancellationToken = default);
-    Task<Character?> UpdateCharacterAsync(Character? entity, CancellationToken cancellationToken = default);
+    Task AddCharacterAsync(Character? entity);
+    Task DeleteCharacterByIdAsync(Guid id);
+    void UpdateCharacter(Character? entity);
+    Task SaveChangesAsync(CancellationToken cancellationToken = default);
 }
