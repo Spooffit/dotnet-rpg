@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-rpg.Infrastructure",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-rpg.Web", "src\dotnet-rpg.Web\dotnet-rpg.Web.csproj", "{9BB90AA2-1ED0-4351-A2BD-EFF9AE75105D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5BD1A53B-DBE8-4F55-A7E3-8141D00F798C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-rpg.Web.UnitTests", "dotnet-rpg.Web.UnitTests\dotnet-rpg.Web.UnitTests.csproj", "{D6C809DC-0605-406E-8193-4D0C8FA42017}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,7 @@ Global
 		{05C361B2-E366-4629-97FC-0DCB854DD3F0} = {9EF403B3-5E30-4049-A934-6224F44FDE1A}
 		{6A8C909F-6AC0-4AE1-8C99-4C19671BB7D0} = {9EF403B3-5E30-4049-A934-6224F44FDE1A}
 		{9BB90AA2-1ED0-4351-A2BD-EFF9AE75105D} = {9EF403B3-5E30-4049-A934-6224F44FDE1A}
+		{D6C809DC-0605-406E-8193-4D0C8FA42017} = {5BD1A53B-DBE8-4F55-A7E3-8141D00F798C}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3C9BE77A-1BE2-4AD6-B023-9E3A0386ADFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,5 +43,9 @@ Global
 		{9BB90AA2-1ED0-4351-A2BD-EFF9AE75105D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BB90AA2-1ED0-4351-A2BD-EFF9AE75105D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BB90AA2-1ED0-4351-A2BD-EFF9AE75105D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C809DC-0605-406E-8193-4D0C8FA42017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C809DC-0605-406E-8193-4D0C8FA42017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C809DC-0605-406E-8193-4D0C8FA42017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C809DC-0605-406E-8193-4D0C8FA42017}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

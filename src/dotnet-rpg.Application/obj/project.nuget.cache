@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XivLjAsrbXABiyvyiDTbdo43VKFlfKuOaQtKcdGGpXgvcJAbm6tdINrt2GyvnTwpGQyN+hjSKjDinMEXwiBV1Q==",
+  "dgSpecHash": "48UjrZu/nkHo5CJmD4t1S11+80Zt5XL6olLkoWf/uQb9AwEEraQDt+PO82VUU3rnghgCHiS6ofMO6RmFPkLJ8g==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Rider\\dotnet-rpg\\src\\dotnet-rpg.Application\\dotnet-rpg.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\super\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\super\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\super\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\super\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\super\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.7\\microsoft.entityframeworkcore.7.0.7.nupkg.sha512",
     "C:\\Users\\super\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.7\\microsoft.entityframeworkcore.abstractions.7.0.7.nupkg.sha512",
