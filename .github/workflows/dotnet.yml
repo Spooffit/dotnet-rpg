@@ -28,4 +28,5 @@ jobs:
       run: dotnet test --verbosity normal
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@v2.2.0
-      
+      with:
+        github-token: ${{ secrets.COVERALLS_TOKEN }}
