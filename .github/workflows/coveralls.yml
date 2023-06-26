@@ -13,7 +13,7 @@ jobs:
       
     steps:
     - name: Run automated unit and integration tests
-      run: dotnet test dotnet-rpg/tests/dotnet-rpg.Web.UnitTests/dotnet-rpg.Web.UnitTests.csproj /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+      run: dotnet test dotnet-rpg/src/tests/dotnet-rpg.Web.UnitTests/dotnet-rpg.Web.UnitTests.csproj /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@v2.2.0
       with:
