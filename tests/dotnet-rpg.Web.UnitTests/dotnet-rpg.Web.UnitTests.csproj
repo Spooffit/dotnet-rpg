@@ -26,9 +26,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\src\dotnet-rpg.Application\dotnet-rpg.Application.csproj" />
-      <ProjectReference Include="..\src\dotnet-rpg.Core\dotnet-rpg.Core.csproj" />
-      <ProjectReference Include="..\src\dotnet-rpg.Web\dotnet-rpg.Web.csproj" />
+      <ProjectReference Include="..\..\src\dotnet-rpg.Application\dotnet-rpg.Application.csproj" />
+      <ProjectReference Include="..\..\src\dotnet-rpg.Core\dotnet-rpg.Core.csproj" />
+      <ProjectReference Include="..\..\src\dotnet-rpg.Infrastructure\dotnet-rpg.Infrastructure.csproj" />
+      <ProjectReference Include="..\..\src\dotnet-rpg.Web\dotnet-rpg.Web.csproj" />
     </ItemGroup>
 
 </Project>
