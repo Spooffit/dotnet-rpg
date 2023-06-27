@@ -7,15 +7,11 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-      
-    steps:
-    - name: Run automated unit and integration tests
-      run: dotnet test dotnet-rpg/src/tests/dotnet-rpg.Web.UnitTests/dotnet-rpg.Web.UnitTests.csproj /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
-    - name: Coveralls GitHub Action
-      uses: coverallsapp/github-action@v2.2.0
-      with:
-        github-token: ${{ secrets.COVERALLS_TOKEN }}
-        path-to-lcov: dotnet-rpg/tests/dotnet-rpg.Web.UnitTests/TestResults/coverage.info 
+    build:
+      project: dotnet-rpg.sln
+      verbosity: detailed
+    
+    environment:
+      COVERALLS_REPO_TOKEN:
+        secure: secrets.COVERALLS_TOKEN
+ 

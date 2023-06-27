@@ -25,8 +25,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --verbosity normal
-    - name: Coveralls GitHub Action
-      uses: coverallsapp/github-action@v2.2.0
-      with:
-        github-token: ${{ secrets.COVERALLS_TOKEN }}
+      run: dotnet test --no-build --verbosity normal
