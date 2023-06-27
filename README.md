@@ -1,5 +1,8 @@
 # dotnet-rpg
 
+![Build badge](https://github.com/Spooffit/dotnet-rpg/actions/workflows/dotnet.yml/badge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/Spooffit/dotnet-rpg/badge.svg?branch=main)](https://coveralls.io/github/Spooffit/dotnet-rpg?branch=main)
+
 #### Study project. Simple Web Api.
 
 ## Technologies:
