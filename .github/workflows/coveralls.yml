@@ -21,7 +21,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal -p:CollectCoverage=true \ -p:CoverletOutputFormat="json" \ -p:CoverletOutput=/src/cover.json
+      run: dotnet test dotnet-rpg/tests/dotnet-rpg.Web.UnitTests/dotnet-rpg.Web.UnitTests.csproj  /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
       
     - name: Coveralls
       uses: coverallsapp/github-action@v2
