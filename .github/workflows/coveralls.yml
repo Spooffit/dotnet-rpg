@@ -1,4 +1,4 @@
-name: Test Coveralls
+name: Coveralls report
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       run: dotnet test tests/dotnet-rpg.Web.UnitTests/dotnet-rpg.Web.UnitTests.csproj  
         /p:CollectCoverage=true 
         /p:CoverletOutput=TestResults/ 
-        /p:CoverletOutputFormat=json
+        /p:CoverletOutputFormat=lcov
       
     - name: Coverage report to coveralls.io
       uses: coverallsapp/github-action@v2.2.0
