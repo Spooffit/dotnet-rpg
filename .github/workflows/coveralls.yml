@@ -30,4 +30,5 @@ jobs:
       uses: coverallsapp/github-action@v2.2.0
       with:
           github-token: ${{ secrets.COVERALLS_TOKEN }} 
-          path-to-lcov: tests/dotnet-rpg.Web.UnitTests/TestResults/coverage.info 
+          file:  tests/dotnet-rpg.Web.UnitTests/TestResults/coverage.info 
+          format: lcov
