@@ -21,9 +21,13 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test tests/dotnet-rpg.Web.UnitTests/dotnet-rpg.Web.UnitTests.csproj  /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+      run: dotnet test tests/dotnet-rpg.Web.UnitTests/dotnet-rpg.Web.UnitTests.csproj  
+        /p:CollectCoverage=true 
+        /p:CoverletOutput=TestResults/ 
+        /p:CoverletOutputFormat=json
       
-    - name: Coveralls
-      uses: coverallsapp/github-action@v2
+    - name: Coverage report to coveralls.io
+      uses: coverallsapp/github-action@v2.2.0
       with:
+          github-token: ${{ secrets.COVERALLS_TOKEN }} 
           path-to-lcov: tests/dotnet-rpg.Web.UnitTests/TestResults/coverage.info 
