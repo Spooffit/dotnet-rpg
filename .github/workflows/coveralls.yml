@@ -1,4 +1,4 @@
-﻿name: coveralls
+name: Test Coveralls
 
 on:
   push:
@@ -7,11 +7,22 @@ on:
     branches: [ "main" ]
 
 jobs:
-    build:
-      project: dotnet-rpg.sln
-      verbosity: detailed
-    
-    environment:
-      COVERALLS_REPO_TOKEN:
-        secure: secrets.COVERALLS_TOKEN
- 
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+
+    - name: restore dependencies, make test-coverage
+      run: |
+        dotnet restore
+        make test-coverage
+
+    - name: Coveralls
+      uses: coverallsapp/github-action@v2
