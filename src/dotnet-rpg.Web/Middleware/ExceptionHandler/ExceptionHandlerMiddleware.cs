@@ -41,9 +41,6 @@ public class ExceptionHandlerMiddleware
 
         switch (exception)
         {
-            case NotFoundException:
-                statusCode = HttpStatusCode.NotFound;
-                break;
             default:
                 statusCode = HttpStatusCode.InternalServerError;
                 break;
