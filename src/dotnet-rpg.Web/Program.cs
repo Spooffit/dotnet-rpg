@@ -1,10 +1,8 @@
 using System.Text.Json.Serialization;
 using dotnet_rpg.Application.Common;
-using dotnet_rpg.Application.Interfaces.Repositories;
 using dotnet_rpg.Application.Mappings;
 using dotnet_rpg.Application.Services;
 using dotnet_rpg.Infrastructure.Persistence;
-using dotnet_rpg.Infrastructure.Persistence.Repositories;
 using dotnet_rpg.Infrastructure.Services;
 using dotnet_rpg.Web.Middleware.ExceptionHandler;
 using FluentValidation;
@@ -66,7 +64,6 @@ using (var scope = builder.Services.BuildServiceProvider().CreateScope())
     }
 }
 
-builder.Services.AddScoped(typeof(ICharacterRepository), typeof(CharacterRepository));
 builder.Services.AddScoped<ICharacterService, CharacterService>();
 
 var app = builder.Build();
