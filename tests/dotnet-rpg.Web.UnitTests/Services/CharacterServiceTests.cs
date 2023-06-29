@@ -85,7 +85,7 @@ public class CharacterServiceTests
         // Assert
         result.Should().NotBeNull();
         result.Data.Should().NotBeNull();
-        result.Data.Count.Should().Be(entitiesCount);
+        result.Data?.Count.Should().Be(entitiesCount);
         result.Data.Should().AllBeOfType<GetCharacterResponseDto>();
 
         _repositoryMock.Verify();
