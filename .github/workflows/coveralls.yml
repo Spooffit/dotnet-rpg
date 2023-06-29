@@ -11,24 +11,21 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 6.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test tests/dotnet-rpg.Web.UnitTests/dotnet-rpg.Web.UnitTests.csproj  
-        /p:CollectCoverage=true 
-        /p:CoverletOutput=TestResults/ 
-        /p:CoverletOutputFormat=lcov
-      
-    - name: Coverage report to coveralls.io
-      uses: coverallsapp/github-action@v2.2.0
-      with:
-          github-token: ${{ secrets.COVERALLS_TOKEN }} 
-          file:  tests/dotnet-rpg.Web.UnitTests/TestResults/coverage.info 
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore
+      - name: Unit and Integration Tests
+        run: dotnet test dotnet-rpg.sln --logger:trx --results-directory ../TestResults
+
+      - name: Coverage report to coveralls.io
+        uses: coverallsapp/github-action@v2.2.0
+        with:
+          github-token: ${{ secrets.COVERALLS_TOKEN }}
+          file:  ../TestResults/coverage.info
           format: lcov
