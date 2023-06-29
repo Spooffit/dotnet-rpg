@@ -27,11 +27,9 @@ public class CharacterController : ControllerBase
     /// </remarks>
     /// <returns>Returns ServiceResponse</returns>
     /// <response code="200">Success</response>
-    /// <response code="400">Bad Request</response>
     /// <response code="500">Internal Server Error</response>
     [HttpGet]
     [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
-    [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status400BadRequest)]
     [ProducesResponseType(typeof(ProblemDetails),StatusCodes.Status500InternalServerError)]
     public async Task<ActionResult<ServiceResponse<List<GetCharacterResponseDto>>>> 
         Get()

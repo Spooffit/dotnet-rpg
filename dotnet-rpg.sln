@@ -14,6 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5BD1A53B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-rpg.Web.UnitTests", "tests\dotnet-rpg.Web.UnitTests\dotnet-rpg.Web.UnitTests.csproj", "{6473BB85-846E-4912-8A5A-3B27575E7E79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-rpg.Web.IntegrationTests", "tests\dotnet-rpg.Web.IntegrationTests\dotnet-rpg.Web.IntegrationTests.csproj", "{E73A9299-75FB-434F-B066-7D363E876F2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-rpg.Application.UnitTests", "tests\dotnet-rpg.Application.UnitTests\dotnet-rpg.Application.UnitTests.csproj", "{6BB04AE7-D4D2-4BE8-A83F-7909E6D778FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,8 @@ Global
 		{6A8C909F-6AC0-4AE1-8C99-4C19671BB7D0} = {9EF403B3-5E30-4049-A934-6224F44FDE1A}
 		{9BB90AA2-1ED0-4351-A2BD-EFF9AE75105D} = {9EF403B3-5E30-4049-A934-6224F44FDE1A}
 		{6473BB85-846E-4912-8A5A-3B27575E7E79} = {5BD1A53B-DBE8-4F55-A7E3-8141D00F798C}
+		{E73A9299-75FB-434F-B066-7D363E876F2A} = {5BD1A53B-DBE8-4F55-A7E3-8141D00F798C}
+		{6BB04AE7-D4D2-4BE8-A83F-7909E6D778FD} = {5BD1A53B-DBE8-4F55-A7E3-8141D00F798C}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3C9BE77A-1BE2-4AD6-B023-9E3A0386ADFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -47,5 +53,13 @@ Global
 		{6473BB85-846E-4912-8A5A-3B27575E7E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6473BB85-846E-4912-8A5A-3B27575E7E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6473BB85-846E-4912-8A5A-3B27575E7E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73A9299-75FB-434F-B066-7D363E876F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73A9299-75FB-434F-B066-7D363E876F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73A9299-75FB-434F-B066-7D363E876F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73A9299-75FB-434F-B066-7D363E876F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BB04AE7-D4D2-4BE8-A83F-7909E6D778FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB04AE7-D4D2-4BE8-A83F-7909E6D778FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB04AE7-D4D2-4BE8-A83F-7909E6D778FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB04AE7-D4D2-4BE8-A83F-7909E6D778FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

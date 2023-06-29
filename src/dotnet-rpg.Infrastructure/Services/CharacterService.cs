@@ -99,9 +99,17 @@ public class CharacterService : ICharacterService
     {
         ServiceResponse<GetCharacterResponseDto> serviceResponse = new();
 
-        _characterRepository.UpdateCharacter(_mapper.Map<Character>(updateCharacter));
-        await _characterRepository.SaveChangesAsync();
-
+        try
+        {
+            _characterRepository.UpdateCharacter(_mapper.Map<Character>(updateCharacter));
+            await _characterRepository.SaveChangesAsync();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw new NotFoundException(nameof(Character), updateCharacter.Id);
+        }
+        
         var updatedCharacter = await _characterRepository.GetCharacterByIdAsync(updateCharacter.Id);
 
         serviceResponse.Data = _mapper.Map<GetCharacterResponseDto>(updatedCharacter);

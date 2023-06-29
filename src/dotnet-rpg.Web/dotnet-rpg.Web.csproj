@@ -32,4 +32,7 @@
       <ProjectReference Include="..\dotnet-rpg.Infrastructure\dotnet-rpg.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+        <InternalsVisibleTo Include="$(AssemblyName).IntegrationTests" />
+    </ItemGroup>
 </Project>
