@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using dotnet_rpg.Application.Common;
 using dotnet_rpg.Application.Interfaces.Repositories;
 using dotnet_rpg.Application.Mappings;
@@ -8,6 +9,7 @@ using dotnet_rpg.Infrastructure.Services;
 using dotnet_rpg.Web.Middleware.ExceptionHandler;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Http.Json;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -21,6 +23,11 @@ builder.Services.AddMvc();
 
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<IAssemblyMarker>();
+
+builder.Services.Configure<JsonOptions>(options =>
+{
+    options.SerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
