@@ -10,7 +10,7 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
     public ApplicationDbContext(
         DbContextOptions<ApplicationDbContext> options) : base(options){}
 
-    public DbSet<Character> Character { get; }
+    public DbSet<Character> Character { get; set; }
     
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken)
     {
