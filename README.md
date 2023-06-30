@@ -1,7 +1,7 @@
 # dotnet-rpg
 
 ![Build badge](https://github.com/Spooffit/dotnet-rpg/actions/workflows/dotnet.yml/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/Spooffit/dotnet-rpg/badge.svg?branch=main)](https://coveralls.io/github/Spooffit/dotnet-rpg?branch=main)
+[![Codecov](https://codecov.io/gh/Spooffit/dotnet-rpg/branch/main/graph/badge.svg?token=ARYTHG802I)](https://codecov.io/gh/Spooffit/dotnet-rpg)
 
 #### Study project. Simple Web Api.
 
