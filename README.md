@@ -13,7 +13,7 @@
 # dotnet-rpg
 Study project. Simple Web Api.
 
-<h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Jellyfish.png" alt="Jellyfish" width="40" height="40" /> Stack</h2>
+<h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Jellyfish.png" alt="Jellyfish" width="30" height="30" /> Stack</h2>
 
 * [ASP.NET 7](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-7.0)
 * [Entity Framework 7](https://github.com/dotnet/efcore)
