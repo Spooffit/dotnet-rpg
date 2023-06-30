@@ -1,4 +1,4 @@
-name: Codecov report
+name: Coveralls report
 
 on:
   push:
