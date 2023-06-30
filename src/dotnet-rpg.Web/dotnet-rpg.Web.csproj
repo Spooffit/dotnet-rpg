@@ -33,6 +33,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <InternalsVisibleTo Include="dotnet-rpg.Web.IntegrationTests"/>
+        <InternalsVisibleTo Include="$(AssemblyName).IntegrationTests"/>
     </ItemGroup>
 </Project>
