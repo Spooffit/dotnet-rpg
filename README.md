@@ -98,7 +98,7 @@ Request body JSON object
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | Id of Character to delete |
 
-<h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Bubbles.png" alt="Bubbles" width="25" height="25" /> Run Locally</h2>
+<h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" width="25" height="25" /> Run Locally</h2>
 
 Clone the project
 
@@ -124,7 +124,7 @@ Start the server
 To run tests, run the following command
 
 ```bash
-  dotnet test dotnet-rpg.sln
+  dotnet test
 ```
 <h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Hamsa.png" alt="Hamsa" width="25" height="25" /> License</h2>
 
