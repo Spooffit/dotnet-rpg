@@ -119,7 +119,7 @@ Start the server
 ```
 
 
-<h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Hatching%20Chick.png" alt="Hatching Chick" width="25" height="25" /> Running Tests</h2>
+<h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Tornado.png" alt="Tornado" width="25" height="25" /> Running Tests</h2>
 
 To run tests, run the following command
 
